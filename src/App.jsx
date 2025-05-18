@@ -1,6 +1,6 @@
 import React, {useState} from 'react'
 import Landing from './Swig/pages/Landing'
-import './App.css'
+import "./App.css"
 import { Routes, Route } from 'react-router-dom'
 import ProductMenu from './Swig/components/ProductMenu'
 import CartPage from './Swig/components/CartPage'
