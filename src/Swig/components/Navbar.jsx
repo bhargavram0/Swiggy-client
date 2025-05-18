@@ -34,8 +34,8 @@ const Navbar = () => {
             <ul className={`navbar-links ${menuOpen ? 'open' : ''}`}>
                 <div ><a href="/">Home</a></div>
                 <div><Link to={'/about'}>About Us</Link></div>
-                <div><a href="/contact">Contact Us </a></div>
-                <div><a href="/help">Help</a></div>
+                <div><Link to={'/contact'}>Contact Us </Link></div>
+                <div><Link to={"/help"}>Help</Link></div>
                 <div><a href="https://swiggy-dashboard-omega.vercel.app/">Corporate Action</a></div>
             </ul>
             <div className={`navbar-auth ${menuOpen ? 'open' : ''}`}>
