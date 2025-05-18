@@ -33,7 +33,7 @@ const Navbar = () => {
             </div>
             <ul className={`navbar-links ${menuOpen ? 'open' : ''}`}>
                 <div ><a href="/">Home</a></div>
-                <div><a href="/about">About Us</a></div>
+                <div><Link to={'/about'}>About Us</Link></div>
                 <div><a href="/contact">Contact Us </a></div>
                 <div><a href="/help">Help</a></div>
                 <div><a href="https://swiggy-dashboard-omega.vercel.app/">Corporate Action</a></div>
