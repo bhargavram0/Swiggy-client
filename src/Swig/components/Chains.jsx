@@ -2,7 +2,7 @@ import React, {useState, useEffect} from 'react'
 import { API_URL } from '../api'
 import {Link} from 'react-router-dom'
 import { FaArrowLeft, FaArrowRight  } from "react-icons/fa";
-import {ThreeDots} from 'react-loader-spinner'
+import { FadeLoader } from "react-spinners";
 
 
 
@@ -67,16 +67,7 @@ const handleScroll = (direction)=>{
       {Loading && <> <div className='loader'>
       Your 🍟 is Loading...
       </div>        
-      <ThreeDots
-  visible={true}
-  height="80"
-  width="80"
-  color="#4fa94d"
-  radius="9"
-  ariaLabel="three-dots-loading"
-  wrapperStyle={{}}
-  wrapperClass=""
-  />
+      <FadeLoader color="#ff6600" size={35} />
         </>   
       }
     </div>
