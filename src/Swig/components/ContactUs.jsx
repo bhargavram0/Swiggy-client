@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
 import  Navbar  from './Navbar';
+import { Phone, Mail, MapPin, Clock } from "lucide-react";
+
 
 const ContactUs = () => {
   const [form, setForm] = useState({
@@ -36,6 +38,7 @@ const ContactUs = () => {
               name="name"
               value={form.name}
               onChange={handleChange}
+              placeholder='Your Name'
               required
             />
           </label>
@@ -47,8 +50,19 @@ const ContactUs = () => {
               name="email"
               value={form.email}
               onChange={handleChange}
+              placeholder='your.email@example.com'
               required
             />
+          </label>
+
+          <label>
+            Phone:
+            <input
+              type="tel"
+              name="phone"
+              value={form.phone || ''}
+              onChange={handleChange}
+              placeholder='+91'/>
           </label>
 
           <label>
@@ -65,12 +79,34 @@ const ContactUs = () => {
         </form>
 
         <div className="contact-info">
+          <div style={{ display: 'flex', alignItems: 'center', gap: '10px' }}>
+          <MapPin className="h-6 w-6 text-orange-500" />
           <h3>Our Office</h3>
-          <p>Swiggy HQ<br />Hyderabad, India</p>
-          <h4>Email:</h4>
-          <p>support@swiggyclone.com</p>
-          <h4>Phone:</h4>
-          <p>+91 00705 00210</p>
+          </div>
+          <p style={{marginTop:'-10px',marginBottom:'0px'}}>
+              Swiggy Bangalore<br />
+              #55/A-10, Indiqube ETA<br />
+              New Airport Road, Bangalore - 560087
+          </p>
+          <div style={{ display: 'flex', alignItems: 'center', gap: '10px' }}>
+            <Mail className="h-6 w-6 text-orange-500" />
+            <h4 style={{fontSize:'20px'}}>Email:</h4>
+          </div>
+          <p style={{marginTop:'-15px',marginBottom:'0px'}}>support@swiggyclone.in</p>
+          
+          <div style={{ display: 'flex', alignItems: 'center', gap: '10px' }}>
+             <Phone className="h-6 w-6 text-orange-500" />
+            <h4 style={{fontSize:'20px'}}>Phone:</h4>
+          </div>
+          <div style={{marginTop:'-20px'}}>
+              <p style={{marginTop:'-15px',marginBottom:'0px'}}>+91 00705 00210</p>
+            </div>
+            
+              <div style={{ display: 'flex', alignItems: 'center', gap: '10px' }}>
+                <Clock className="h-6 w-6 text-orange-500" />
+                <h3 className="font-semibold">Support Hours:</h3>
+            </div>
+            <p style={{marginTop:'-5px'}}>24/7 Customer Support</p>
         </div>
       </div>
 

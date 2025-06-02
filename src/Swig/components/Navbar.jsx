@@ -1,5 +1,6 @@
 import React, {useState} from 'react';
 import { Link, useNavigate  } from 'react-router-dom';
+import { Search, MapPin, User, ShoppingBag } from "lucide-react";
 
 
 
@@ -27,6 +28,10 @@ const Navbar = () => {
                 </Link>
 
             </div>
+            <div className="location">
+              <MapPin className="h-4 w-4" style={{color:'orange'}} />
+              <span className="text-sm" style={{fontWeight:'700', marginRight:'10px'}}>Deliver to Current Location</span>
+            </div>
             <div className={`searchBar ${menuOpen ? 'open' : ''}`}>
                 <span className="search-icon">&#128269;</span>
                 <input type="text" placeholder='search...' />
@@ -42,7 +47,9 @@ const Navbar = () => {
                 {/* <button className="login-btn"  onClick={handleLoginClick}>Login</button>  */}
                 <button className="login-btn" onClick={handleLoginClick}>Sign Up</button>
                 {/* <button className="login-btn" onClick={() => window.open("http://localhost:5173", "_blank")}>Corporate Acton</button> */}
+            
             </div>
+           
         </nav>
     );
 };

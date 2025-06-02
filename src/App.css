@@ -32,9 +32,15 @@ body {
     width: 100px;
     padding-bottom: 14px;
     padding-top: 14px;
-    margin-right: 30px;
+    /* margin-right: 30px; */
     margin-left: 5px;
     /* border: 1px solid red; */
+}
+
+.location{
+    display: flex;
+    align-items: center;
+    gap: 10px;
 }
 
 .searchBar {
@@ -52,7 +58,7 @@ body {
     background-color: #f2eded;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
     transition: box-shadow 0.3s ease;
-    margin-left: -30px;
+    /* margin-left: -30px; */
     /* border: 1px solid red; */
 
 }
@@ -1364,6 +1370,7 @@ body {
   }
 }
 
+
 /* contactUs */
 .contact-container {
   max-width: 900px;
@@ -2420,6 +2427,10 @@ button[type="submit"]:hover {
   box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
 }
 
+.location{
+  display: none;
+}
+
 }
 
 
@@ -2432,6 +2443,10 @@ button[type="submit"]:hover {
         padding: 10px;
         /* border: 2px solid black; */
     }
+
+    .location{
+  display: none;
+}
 
     .navbar-logo {
       width: 105px;
